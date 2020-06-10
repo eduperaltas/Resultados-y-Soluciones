@@ -8,7 +8,6 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { UploaderComponent } from './uploader/uploader.component';
-import { PruebaComponent } from './uploader/prueba/prueba.component';
 
 @NgModule({
   imports: [
@@ -22,7 +21,6 @@ import { PruebaComponent } from './uploader/prueba/prueba.component';
   declarations: [
     PagesComponent,
     UploaderComponent,
-    PruebaComponent,
   ],
 })
 export class PagesModule {
