@@ -7,25 +7,24 @@
 }
 
 .contenedor1 {
+  background-color: #0931EB;
   width: 940px;
-  height: 100px;
-  margin-bottom: 20px;
+  height: auto;
 }
 
 .contenedor2 {
-    width: 940px;
-    height: 300px;
-    text-align: center;
-    margin-bottom: 20px;
+  width: 940px;
+  padding: 2%;
 }
 
 .contenedor3 {
   width: 940px;
-  height: 200px;
-  margin-bottom: 20px;
-  text-align:center;
 }
-   
+  
+.pie{
+  width: 940px;
+}
+
 h1{
     text-align:center;
 }
@@ -36,10 +35,6 @@ h1{
   padding-top: 2%;
 }
 
-#controladores{
-  padding-top: 7%;
-}
-
 #imagen{
   position: relative;
   display: inline-block;
@@ -47,7 +42,7 @@ h1{
 }
 
 #imagen img{
-width: 110%;
+width: 100%;
 }
 
 .texto_centrado{
@@ -58,56 +53,31 @@ position: absolute;
   color: white;
 }
 
-ul{
-text-align: left;
-}
 
 // estilo de subir archivo
 
-#cajaprincipal{
-height: 130px;
+.cajaprincipal{
+margin-top: 9%;
+height: auto;
 padding-bottom: 6px;
 padding-left: 0px;
 padding-right: 0px;
-margin-top: 10px;
 }
 
 .cajarelleno{
-height: 20px;
+  height: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .cajatexto{
-width: 78%;
-float: left;
-padding-left: 6px;
-padding-right: 0px;
-padding-top: 6px;
-}
-
-.cajatexto li::before{
-content: "\26AA"; /* Insertamos el marcador */
-// padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
-padding-right:0px
-}
-
-.cajatexto li{
-color: #0D0D25;
-font-weight: normal;
-font-family: Cambria;
-}
-
-.cajadatos li{
-color: #0D0D25;
-font-weight: normal;
-font-family: Cambria;
-}
-
-.cajadatos{
-width: 22%;
-float: right;
+width: 100%;
 padding-left: 0px;
 padding-right: 0px;
-padding-top: 6px;
+}
+
+.cajatexto td{
+  border: 1px solid;
 }
 
 .plomo{
@@ -155,15 +125,12 @@ list-style: none;
 padding: 0;
 }
 
-
 // pagina 2
-.errormensaje{
+.okmensaje{
 text-align: center;
 }
 // spinner
 .spinner-border {
-width: 80px;
-height: 80px;
 border-right-color: green;
 }
 
@@ -171,6 +138,28 @@ h1{
   color: black;
 }
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+.row{
+  height: 100%;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
+.alertaerror{
+  position:absolute; 
+  top:14%; 
+  left:82%;
+}
+
+.alertapeligro{
+  position:absolute; 
+  top:24%; 
+  left:82%;
+}
 
 @media only screen and (min-width: 360px) {
   .col-s-12 {width: 100%;}
